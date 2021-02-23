@@ -6,9 +6,9 @@ class OneLinkUrlGenerator {
     // ...
     constructor({
                     oneLinkURL,
-                    pidKeysList = [],
+                    pidKeysList = ['pid','testpid'],
                     pidStaticValue = null,
-                    campaignKeysList = [],
+                    campaignKeysList = ['c','testc'],
                     campaignStaticValue = null,
                     pidOverrideList = [],
                     gclIdParam = 'af_sub5',

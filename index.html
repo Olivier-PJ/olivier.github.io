@@ -60,9 +60,15 @@
         campaignKeysList: ['utm_campaign','c','ctest']
       });
       //onelinkGenerator.setChannel();
-      onelinkGenerator.setChannel("af_channel_outgoing", "default_channel");
-      onelinkGenerator.setCustomParameter("af_os", "af_os","af_os_default");
-      onelinkGenerator.setCustomParameter("af_test", "af_test","af_test_default");
+      //onelinkGenerator.setChannel("af_channel_outgoing", "default_channel");
+         
+      onelinkGenerator.setChannel("af_channel", "default"); 
+      onelinkGenerator.setAdset("af_adset", "default"); 
+      onelinkGenerator.setAd("af_ad", "default"); 
+         
+         
+      //onelinkGenerator.setCustomParameter("af_os", "af_os","af_os_default");
+      //onelinkGenerator.setCustomParameter("af_test", "af_test","af_test_default");
 
          
       // generate url

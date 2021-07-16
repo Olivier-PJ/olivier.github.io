@@ -17,7 +17,7 @@
     <h1>
       Test Banner 2
     </h1>
-  <!--<div class="wrapper">
+  <div class="wrapper">
     <div class="row">
       <div class="column">
         <img src="./images/appsflyerlogo.png" alt="AppsFlyer logo">
@@ -62,7 +62,8 @@
       // config appsflyer
       const onelinkGenerator = new window.AF.OneLinkUrlGenerator({
         oneLinkURL: "https://aukb.onelink.me/SHza/",
-        pidKeysList: ['utm_source','pid','pidtest'],
+        pidKeysList: ['utm_source','af_pid','pidtest'],
+        pidStaticValue: 'User_invite',
         campaignKeysList: ['utm_campaign','c','ctest']
       });
       //onelinkGenerator.setChannel();
@@ -88,7 +89,7 @@
         document.getElementById('output_url').innerHTML = url;
       }
     };
-  </script>-->
+  </script>
 </body>
 
 </html>

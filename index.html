@@ -2,22 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Redirect Test</title>
+  <title>Adidas Redirect Test</title>
 </head>
 <body>
-  <h1>Redirect Test</h1>
+  <h1>Adidas Redirect Test</h1>
 
-  <!-- JS Redirection (auto after 3 seconds) -->
-  <p>This page will automatically redirect to Google in 3 seconds via JavaScript.</p>
+  <!-- JS redirection trigger -->
+  <button id="startRedirect">Start 3-Second JS Redirect</button>
+  <p id="status"></p>
 
   <!-- Click-based redirection -->
-  <p>Or you can <a href="https://www.google.com" target="_self">click here to go to Google</a> right now.</p>
+  <p>Or just <a href="https://www.adidas.com/us/apple_mls_seasonpass" target="_self">click here to go to Adidas now</a>.</p>
 
   <script>
-    setTimeout(() => {
-      console.log("Redirecting via JavaScript...");
-      window.location.href = "https://www.google.com";
-    }, 3000); // 3-second delay
+    document.getElementById("startRedirect").addEventListener("click", function () {
+      document.getElementById("status").textContent = "Redirecting to Adidas in 3 seconds...";
+
+      setTimeout(() => {
+        console.log("Redirecting via JavaScript...");
+        window.location.href = "https://www.adidas.com/us/apple_mls_seasonpass";
+      }, 3000); // 3-second delay
+    });
   </script>
 </body>
 </html>

@@ -1,31 +1,23 @@
 <!DOCTYPE html>
-<html>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>HTML Tutorial</title>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirect Test</title>
+</head>
 <body>
+  <h1>Redirect Test</h1>
 
-<h1>This is a heading</h1>
-<p>Client link</p>
-  <a class="lp-element lp-pom-button" id="lp-pom-button-191" href="https://facetory.onelink.me/qTZZ?pid=web2web_payment_success&deep_link_value=&c=Facetory_DL_Password&af_dp=gismartfacetory%3A%2F%2F&deep_link_sub1=gismartfacetory%3A%2F%2F%3Flogin%3Dpassword">Click WITH af_dp</a>
-  <br>
-  <br>
-  <a class="lp-element lp-pom-button" id="lp-pom-button-191" href="https://facetory.onelink.me/qTZZ?pid=web2web_payment_success&deep_link_value=&c=Facetory_DL_Password&deep_link_sub1=gismartfacetory%3A%2F%2F%3Flogin%3Dpassword">Click WITHOUT af_dp</a>
-  <br>
-  <p>My link</p>
-  <br>
-  <a class="lp-element lp-pom-button" id="lp-pom-button-191" href="https://testolivier.onelink.me/C3os?af_xp=custom&pid=test_olivier&c=test_olivier&af_dp=testolivier%3A%2F%2F">Click WITH af_dp</a>
-  <br>
-  <br>
-  <a class="lp-element lp-pom-button" id="lp-pom-button-191" href="https://testolivier.onelink.me/C3os?af_xp=custom&pid=test_olivier&c=test_olivier">Click WITHOUT af_dp</a>
-  <br>
-  <br>
-  <a class="lp-element lp-pom-button" id="lp-pom-button-191" href="https://testolivier.onelink.me/C3os/n8jfea90">Click landing page</a>
+  <!-- JS Redirection (auto after 3 seconds) -->
+  <p>This page will automatically redirect to Google in 3 seconds via JavaScript.</p>
+
+  <!-- Click-based redirection -->
+  <p>Or you can <a href="https://www.google.com" target="_self">click here to go to Google</a> right now.</p>
+
+  <script>
+    setTimeout(() => {
+      console.log("Redirecting via JavaScript...");
+      window.location.href = "https://www.google.com";
+    }, 3000); // 3-second delay
+  </script>
 </body>
-
-
-
 </html>
-
-
-<script>
-</script>

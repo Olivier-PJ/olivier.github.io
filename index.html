@@ -2,27 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Adidas Redirect Test</title>
+  <title>Test Banner </title>
+  <script>
+!function(t,e,n,s,a,c,i,o,p){t.AppsFlyerSdkObject=a,t.AF=t.AF||function(){(t.AF.q=t.AF.q||[]).push([Date.now()].concat(Array.prototype.slice.call(arguments)))},t.AF.id=t.AF.id||i,t.AF.plugins={},o=e.createElement(n),p=e.getElementsByTagName(n)[0],o.async=1,o.src="https://websdk.appsflyer.com?"+(c.length>0?"st="+c.split(",").sort().join(",")+"&":"")+(i.length>0?"af_id="+i:""),p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","banners",{banners: {key: "6abf0c45-7bfd-44ad-9a06-e74638f75a9f"}});
+AF('banners', 'showBanner')
+</script>
 </head>
 <body>
-  <h1>Adidas Redirect Test</h1>
-
-  <!-- JS redirection trigger -->
-  <button id="startRedirect">Start 3-Second JS Redirect</button>
-  <p id="status"></p>
-
-  <!-- Click-based redirection -->
-  <p>Or just <a href="https://www.adidas.com/us/apple_mls_seasonpass" target="_self">click here to go to Adidas now</a>.</p>
-
-  <script>
-    document.getElementById("startRedirect").addEventListener("click", function () {
-      document.getElementById("status").textContent = "Redirecting to Adidas in 3 seconds...";
-
-      setTimeout(() => {
-        console.log("Redirecting via JavaScript...");
-        window.location.href = "https://www.adidas.com/us/apple_mls_seasonpass";
-      }, 3000); // 3-second delay
-    });
-  </script>
+  <h1>Test Banner </h1>
 </body>
 </html>
